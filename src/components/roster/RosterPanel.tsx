@@ -237,12 +237,8 @@ export default function RosterPanel() {
 
         <div className="p-3 sm:p-4 border-t border-gray-100 flex-shrink-0">
           <Button
-            className="
-            w-full bg-black text-white hover:bg-gray-800 active:bg-gray-900
-            py-3 px-4 rounded-lg text-sm font-medium 
-            transition-colors duration-200
-            focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2
-          "
+            style={{ backgroundColor: "#000" }}
+            className="w-full text-white hover:bg-gray-800 active:bg-gray-900 py-3 px-4 rounded-lg text-sm font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
             onClick={() => setIsOpen(false)}
           >
             ⊕ Add New Vehicle
