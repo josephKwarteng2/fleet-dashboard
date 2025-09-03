@@ -20,4 +20,11 @@ export const vans = [
     status: "On the way",
     avatar: "https://i.pravatar.cc/150?img=10",
   },
+  {
+    id: "17",
+    name: "Jaxson Donin",
+    vehicle: "Volkswagen Transporter",
+    status: "On the way",
+    avatar: "https://i.pravatar.cc/150?img=14",
+  },
 ];

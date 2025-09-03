@@ -14,20 +14,20 @@ export default function SectionHeading({
   onToggle?: () => void;
 }) {
   return (
-    <div className="flex items-center justify-between mb-3 gap-2">
-      <h2 className="text-sm lg:text-base font-medium text-gray-900 truncate flex-1">
+    <div className="flex items-center justify-between mb-0.5 pl-3">
+      <h2 className="text-[12px] font-semibold text-black truncate flex-1 uppercase tracking-wider">
         {title}
       </h2>
-      <div className="flex items-center gap-2 flex-shrink-0">
+      <div className="flex items-center gap-0.5 flex-shrink-0">
         {action && <div className="hidden sm:block">{action}</div>}
         {collapsible && (
           <button
-            className="text-gray-400 hover:text-gray-600 transition-colors duration-200 p-1"
+            className="text-gray-400 hover:text-gray-600 transition-colors duration-150 p-0.5"
             onClick={onToggle}
             aria-label={expanded ? "Collapse" : "Expand"}
           >
             <ChevronDown
-              className={`w-4 h-4 transition-transform duration-300 ${
+              className={`w-2.5 h-2.5 transition-transform duration-150 ${
                 expanded ? "" : "rotate-180"
               }`}
             />

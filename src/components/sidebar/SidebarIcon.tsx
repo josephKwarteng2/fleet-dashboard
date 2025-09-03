@@ -8,7 +8,7 @@ export default function SidebarIcon({
   return (
     <div
       className={`
-        size-8 flex items-center justify-center cursor-pointer rounded-lg
+        size-6 flex items-center justify-center cursor-pointer rounded-md
         ${
           active
             ? "bg-blue-600 text-white"
@@ -16,7 +16,7 @@ export default function SidebarIcon({
         }
       `}
     >
-      <Icon className="size-4" />
+      <Icon className="size-3" />
     </div>
   );
 }

@@ -31,4 +31,28 @@ export const drivers = [
     avatar: "https://i.pravatar.cc/150?img=4",
     favorite: true,
   },
+  {
+    id: "11",
+    name: "Gustavo Torff",
+    vehicle: "Volvo FH",
+    status: "Unloading",
+    avatar: "https://i.pravatar.cc/150?img=11",
+    favorite: false,
+  },
+  {
+    id: "12",
+    name: "Jaylon Botosh",
+    vehicle: "MAN TGM 15.290 4x2 BL CH",
+    status: "Loading",
+    avatar: "https://i.pravatar.cc/150?img=12",
+    favorite: false,
+  },
+  {
+    id: "13",
+    name: "Marcus Dokidis",
+    vehicle: "MAN TGL 8.190 4x2 BL CH",
+    status: "On the way",
+    avatar: "https://i.pravatar.cc/150?img=13",
+    favorite: false,
+  },
 ];
