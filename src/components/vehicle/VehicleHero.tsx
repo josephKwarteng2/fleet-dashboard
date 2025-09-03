@@ -10,10 +10,7 @@ export default function VehicleSpecCard() {
   return (
     <TooltipProvider>
       <div className="bg-gray-50 p-4">
-        <div
-          className="bg-white rounded-lg shadow-sm p-4 mb-4 flex items-center justify-between sticky top-0 z-30"
-          style={{ background: "white" }}
-        >
+        <div className="bg-white rounded-lg shadow-sm p-4 mb-4 flex items-center justify-between sticky top-0 z-30">
           <div className="flex items-center gap-3">
             <img
               src="https://i.pravatar.cc/150?img=3"
@@ -57,10 +54,10 @@ export default function VehicleSpecCard() {
           </div>
         </div>
 
-        <div className="bg-white rounded-lg shadow-sm p-6 mb-2">
-          <div className="flex items-center justify-between mb-4">
+        <div className="bg-white rounded-lg shadow-sm p-6">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
             <div className="flex-1">
-              <h3 className="text-xl font-bold text-gray-900 mb-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-6">
                 Volkswagen Transporter
               </h3>
 
@@ -74,19 +71,19 @@ export default function VehicleSpecCard() {
                   <p className="text-lg font-bold text-gray-900">353,937 in³</p>
                 </div>
                 <div>
-                  <p className="text-sm text-gray-500 mb-1">Cargo Length</p>
+                  <p className="text-sm text-gray-500 mb-1">Load Length</p>
                   <p className="text-lg font-bold text-gray-900">117 in</p>
                 </div>
                 <div>
-                  <p className="text-sm text-gray-500 mb-1">Cargo Width</p>
+                  <p className="text-sm text-gray-500 mb-1">Load Width</p>
                   <p className="text-lg font-bold text-gray-900">67 in</p>
                 </div>
               </div>
 
               <div className="flex items-center gap-8 mt-8">
                 <div className="flex items-center gap-3">
-                  <div className="border-2 border-gray-300 rounded px-3 py-1">
-                    <span className="text-sm font-mono font-medium">
+                  <div className="border border-gray-300 rounded px-3 py-1">
+                    <span className="text-sm font-mono font-medium tracking-wide">
                       6TRJ244
                     </span>
                   </div>
@@ -105,15 +102,13 @@ export default function VehicleSpecCard() {
             </div>
 
             <div className="flex-1 flex justify-end">
-              <div className="relative">
-                <img
-                  src="/van.png"
-                  alt="Volkswagen Transporter"
-                  className="w-96 h-48 object-cover rounded-lg"
-                />
-              </div>
+              <img
+                src="/van.png"
+                alt="Volkswagen Transporter"
+                className="w-full max-w-md h-auto object-contain"
+              />
             </div>
-          </div>{" "}
+          </div>
         </div>
       </div>
     </TooltipProvider>
