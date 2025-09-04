@@ -10,6 +10,7 @@ interface RosterItemProps {
   phone?: string;
   warning?: boolean;
   isSelected?: boolean;
+  active?: boolean;
 }
 
 export default function RosterItem({
@@ -40,7 +41,7 @@ export default function RosterItem({
     >
       <>
         <div className="relative flex-shrink-0">
-          <Avatar className="w-6 h-6 lg:w-7 lg:h-7">
+          <Avatar className="w-6 h-6 lg:w-7 lg:h-7 -ml-3" active={item.active}>
             <AvatarImage src={item.avatar} alt={item.name} />
             <AvatarFallback className="bg-gradient-to-br from-blue-400 to-purple-500 text-white text-[9px] lg:text-[10px] font-medium">
               {item.name

@@ -5,6 +5,7 @@ export const vans = [
     vehicle: "Volkswagen Transporter",
     status: "Loading",
     avatar: "https://i.pravatar.cc/150?img=8",
+    active: true,
   },
   {
     id: "9",
@@ -12,6 +13,7 @@ export const vans = [
     vehicle: "Mercedes-Benz Sprinter",
     status: "On the way",
     avatar: "https://i.pravatar.cc/150?img=9",
+    active: true,
   },
   {
     id: "10",

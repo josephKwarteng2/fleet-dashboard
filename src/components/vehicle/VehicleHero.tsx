@@ -10,7 +10,7 @@ export default function VehicleSpecCard() {
   return (
     <TooltipProvider>
       <div className="bg-gray-50 p-6">
-        <div className="bg-white rounded-lg px-1 -py-3 mb-6 flex items-center justify-between sticky top-0 z-30">
+        <div className="bg-white px-1 -py-3 mb-6 flex items-center justify-between sticky top-0 z-30">
           <div className="flex items-center gap-3">
             <img
               src="https://i.pravatar.cc/150?img=3"
@@ -55,7 +55,7 @@ export default function VehicleSpecCard() {
           </div>
         </div>
 
-        <div className="bg-[#dddee2] rounded-lg p-8">
+        <div className="bg-[#ddddde] rounded-lg pt-2 pb-4 px-14">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
             <div className="flex-[1.2] min-w-0">
               <h3 className="text-base font-semibold text-gray-900 mb-6">

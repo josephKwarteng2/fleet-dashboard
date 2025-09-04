@@ -6,6 +6,7 @@ export const drivers = [
     status: "On the way",
     avatar: "https://i.pravatar.cc/150?img=1",
     favorite: true,
+    active: true,
   },
   {
     id: "2",
@@ -22,6 +23,7 @@ export const drivers = [
     status: "On the way",
     avatar: "https://i.pravatar.cc/150?img=3",
     favorite: true,
+    active: true,
   },
   {
     id: "4",
@@ -46,6 +48,7 @@ export const drivers = [
     status: "Loading",
     avatar: "https://i.pravatar.cc/150?img=12",
     favorite: false,
+    active: true,
   },
   {
     id: "13",
@@ -54,5 +57,6 @@ export const drivers = [
     status: "On the way",
     avatar: "https://i.pravatar.cc/150?img=13",
     favorite: false,
+    active: true,
   },
 ];

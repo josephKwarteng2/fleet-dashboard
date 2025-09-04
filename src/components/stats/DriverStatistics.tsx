@@ -56,24 +56,36 @@ export default function DriverStatistics() {
 
         <div className="flex w-full mb-1 px-1">
           <div className="flex items-center" style={{ width: "38.7%" }}>
-            <span className="text-xs font-semibold text-gray-400 text-start w-full">
-              On the Way
-            </span>
+            <div className="flex flex-col items-start w-full">
+              <span className="text-xs font-semibold text-gray-400 text-start">
+                On the Way
+              </span>
+              <div className="w-px h-2 bg-gray-400 rounded-full mt-1"></div>
+            </div>
           </div>
           <div className="flex items-center" style={{ width: "28.3%" }}>
-            <span className="text-xs font-semibold text-gray-400 text-start w-full">
-              Unloading
-            </span>
+            <div className="flex flex-col items-start w-full">
+              <span className="text-xs font-semibold text-gray-400 text-start">
+                Unloading
+              </span>
+              <div className="w-px h-2 bg-gray-400 rounded-full mt-1"></div>
+            </div>
           </div>
           <div className="flex items-center" style={{ width: "17.4%" }}>
-            <span className="text-xs font-semibold text-gray-400 text-start w-full">
-              Loading
-            </span>
+            <div className="flex flex-col items-start w-full">
+              <span className="text-xs font-semibold text-gray-400 text-start">
+                Loading
+              </span>
+              <div className="w-px h-2 bg-gray-400 rounded-full mt-1"></div>
+            </div>
           </div>
           <div className="flex items-center" style={{ width: "14.6%" }}>
-            <span className="text-xs font-semibold text-gray-400 text-start w-full">
-              Waiting
-            </span>
+            <div className="flex flex-col items-start w-full">
+              <span className="text-xs font-semibold text-gray-400 text-start">
+                Waiting
+              </span>
+              <div className="w-px h-2 bg-gray-400 rounded-full mt-1"></div>
+            </div>
           </div>
         </div>
         <div className="flex w-full rounded-xl mb-3 h-12 relative shadow-2xl">
@@ -100,7 +112,9 @@ export default function DriverStatistics() {
               <div className="absolute -top-3 left-1/2 w-6 h-6 bg-[#E9EDFB]/40 rounded-full blur-sm"></div>
 
               <span className="font-bold text-gray-800 text-xs relative z-10 drop-shadow-sm">
-                38.7%
+                <span className="font-bold text-gray-800 text-xs relative z-10 drop-shadow-sm text-left w-full pl-2">
+                  38.7%
+                </span>
               </span>
               <div className="absolute left-0 right-0 top-full h-16 overflow-visible opacity-40">
                 <div className="w-full h-full bg-gradient-to-b from-[#E9EDFB] via-[#E9EDFB]/60 to-transparent transform scale-y-[-1] blur-[3px]"></div>
@@ -122,7 +136,9 @@ export default function DriverStatistics() {
               <div className="absolute top-1/2 -right-3 w-4 h-8 bg-gradient-to-r from-transparent to-[#1E90FF]/30 blur-lg"></div>
 
               <span className="font-bold text-white text-xs relative z-10 drop-shadow-lg">
-                28.3%
+                <span className="font-bold text-white text-xs relative z-10 drop-shadow-lg text-left w-full pl-2">
+                  28.3%
+                </span>
               </span>
 
               <div className="absolute left-0 right-0 top-full h-16 overflow-visible opacity-50">
@@ -145,7 +161,9 @@ export default function DriverStatistics() {
               <div className="absolute bottom-0 -right-2 w-6 h-4 bg-gradient-to-l from-[#FF9800]/35 to-transparent blur-lg"></div>
 
               <span className="font-bold text-white text-xs relative z-10 drop-shadow-lg">
-                17.4%
+                <span className="font-bold text-white text-xs relative z-10 drop-shadow-lg text-left w-full pl-2">
+                  17.4%
+                </span>
               </span>
 
               <div className="absolute left-0 right-0 top-full h-16 overflow-visible opacity-50">
@@ -170,7 +188,9 @@ export default function DriverStatistics() {
               <div className="absolute -bottom-2 right-1/3 w-2 h-2 bg-[#424242]/40 rounded-full blur-sm"></div>
 
               <span className="font-bold text-white text-xs relative z-10 drop-shadow-lg">
-                14.6%
+                <span className="font-bold text-white text-xs relative z-10 drop-shadow-lg text-left w-full pl-2">
+                  14.6%
+                </span>
               </span>
 
               <div className="absolute left-0 right-0 top-full h-16 overflow-visible opacity-50">
@@ -226,12 +246,7 @@ export default function DriverStatistics() {
           <div className="font-medium text-[11px] text-gray-700 uppercase tracking-wide">
             Working time per day
           </div>
-          <div className="text-xs text-gray-500">9/12/22</div>
-        </div>
-
-        <div className="flex items-center justify-between mb-2">
-          <div className="text-xs text-gray-700">Average</div>
-          <div className="text-xs font-medium text-gray-900">6 hr 30 min</div>
+          <div className="text-xs text-gray-500">W M 6M Y</div>
         </div>
 
         <div className="h-36 w-full mb-2">

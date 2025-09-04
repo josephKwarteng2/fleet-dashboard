@@ -5,6 +5,7 @@ export const trucks = [
     vehicle: "Volvo FL",
     status: "On the way",
     avatar: "https://i.pravatar.cc/150?img=5",
+    active: true,
   },
   {
     id: "6",
@@ -19,6 +20,7 @@ export const trucks = [
     vehicle: "Volvo FH",
     status: "On the way",
     avatar: "https://i.pravatar.cc/150?img=7",
+    active: true,
   },
   {
     id: "14",
@@ -40,5 +42,6 @@ export const trucks = [
     vehicle: "MAN TGL 8.190 4x2 BL CH",
     status: "On the way",
     avatar: "https://i.pravatar.cc/150?img=13",
+    active: true,
   },
 ];

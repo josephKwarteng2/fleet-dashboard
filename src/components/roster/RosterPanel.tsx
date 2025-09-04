@@ -201,11 +201,15 @@ export default function RosterPanel() {
           <Button
             className="
               w-full bg-black text-white hover:bg-black active:bg-black 
-              h-7 px-2 rounded text-[10px] font-medium 
+              h-7 px-2 rounded font-medium 
               transition-colors duration-150 
               focus:outline-none
             "
-            style={{ backgroundColor: "black" }}
+            style={{
+              backgroundColor: "black",
+              fontSize: "11px",
+              borderRadius: 4,
+            }}
             onClick={() => setIsOpen(false)}
           >
             ⊕ Add New Vehicle
