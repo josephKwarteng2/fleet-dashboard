@@ -23,6 +23,7 @@ export default function App() {
             <div className="flex-1">
               <RoutesPanel />
             </div>
+            <div className="hidden lg:block w-0.5 bg-gray-100 mx-2" />
             <div className="flex-1">
               <DriverStatistics />
             </div>

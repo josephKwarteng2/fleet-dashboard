@@ -58,7 +58,7 @@ const MapPreview = () => (
 
 export default function RoutesPanel() {
   return (
-    <div className="w-full h-full flex flex-col min-h-0 p-4 divide-y divide-gray-200">
+    <div className="w-full h-full flex flex-col min-h-0 p-4">
       <div className="flex items-center justify-between px-3 py-2 flex-shrink-0">
         <h2 className="font-semibold text-sm">Routes</h2>
         <button className="text-xs text-gray-500 hover:text-gray-700 transition-colors">
@@ -67,14 +67,15 @@ export default function RoutesPanel() {
       </div>
 
       <div className="px-3 py-3">
-        <div className="font-bold text-xs text-gray-800 mb-2 uppercase tracking-wide">
-          NOW ON THE WAY
+        <div className="flex items-center mb-5 w-full">
+          <span className="font-semibold uppercase text-xs text-gray-600 uppercase tracking-wide">
+            now on the way
+          </span>
+          <span className="flex-1 h-px bg-gray-200 ml-2" />
         </div>
 
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
-          <div className="font-semibold text-sm">
-            ID: 107-591 - 138 packages
-          </div>
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+          <div className="font-bold text-sm">ID: 107-591 - 138 packages</div>
         </div>
 
         <div className="text-xs text-gray-600 leading-relaxed mb-3">
@@ -136,10 +137,7 @@ export default function RoutesPanel() {
             address: "6215 Engle Way → 905 1st St, Gilroy, CA 95020",
           },
         ].map((route, i) => (
-          <div
-            key={i}
-            className="pb-3 border-b border-gray-100 last:border-0 last:pb-0"
-          >
+          <div key={i} className="pb-3 last:pb-0">
             <div className="font-semibold text-sm mb-1">
               ID: {route.id} - {route.packages} packages
             </div>

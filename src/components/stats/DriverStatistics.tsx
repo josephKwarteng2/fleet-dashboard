@@ -24,7 +24,7 @@ export default function DriverStatistics() {
   const [range, setRange] = React.useState<string>("W");
 
   return (
-    <div className="w-full h-full flex flex-col min-h-0 p-4 divide-y divide-gray-200">
+    <div className="w-full h-full flex flex-col min-h-0 p-4">
       <div className="flex items-center justify-between px-3 py-4 flex-shrink-0">
         <h2 className="font-semibold text-sm flex items-center gap-1">
           Driver Statistics
@@ -34,7 +34,7 @@ export default function DriverStatistics() {
 
       <div className="px-3 py-3">
         <div className="flex justify-between items-center mb-2 ont-medium text-[11px]">
-          <div className="font-medium text-[11px] text-gray-700  uppercase tracking-wide">
+          <div className="font-medium text-[11px] text-gray-700 uppercase tracking-wide">
             Average time per day by category
           </div>
           <div className="flex gap-0.5">
@@ -53,6 +53,29 @@ export default function DriverStatistics() {
             ))}
           </div>
         </div>
+
+        <div className="flex w-full mb-1 px-1">
+          <div className="flex items-center" style={{ width: "38.7%" }}>
+            <span className="text-xs font-semibold text-gray-400 text-start w-full">
+              On the Way
+            </span>
+          </div>
+          <div className="flex items-center" style={{ width: "28.3%" }}>
+            <span className="text-xs font-semibold text-gray-400 text-start w-full">
+              Unloading
+            </span>
+          </div>
+          <div className="flex items-center" style={{ width: "17.4%" }}>
+            <span className="text-xs font-semibold text-gray-400 text-start w-full">
+              Loading
+            </span>
+          </div>
+          <div className="flex items-center" style={{ width: "14.6%" }}>
+            <span className="text-xs font-semibold text-gray-400 text-start w-full">
+              Waiting
+            </span>
+          </div>
+        </div>
         <div className="flex w-full rounded-xl mb-3 h-12 relative shadow-2xl">
           <div className="absolute -inset-6 bg-gradient-radial from-transparent via-transparent to-transparent pointer-events-none">
             <div className="absolute top-0 left-0 w-1/3 h-full bg-gradient-to-r from-[#E9EDFB]/20 via-[#E9EDFB]/10 to-transparent blur-xl"></div>
@@ -64,7 +87,11 @@ export default function DriverStatistics() {
           <div className="flex w-full rounded-xl overflow-hidden relative">
             <div
               className="flex items-center justify-center relative overflow-visible"
-              style={{ width: "38.7%" }}
+              style={{
+                width: "38.7%",
+                boxShadow:
+                  "0 8px 25px 0 rgba(233, 237, 251, 0.4), 0 4px 12px 0 rgba(233, 237, 251, 0.3), 0 2px 6px 0 rgba(233, 237, 251, 0.2)",
+              }}
             >
               <div className="absolute inset-0 bg-gradient-to-b from-[#F5F8FF] via-[#E9EDFB] to-[#D1DAF0] rounded-l-xl"></div>
               <div className="absolute top-0 left-0 right-0 h-1/3 bg-gradient-to-b from-white/60 to-transparent rounded-l-xl"></div>
@@ -82,7 +109,11 @@ export default function DriverStatistics() {
             </div>
             <div
               className="flex items-center justify-center relative overflow-visible"
-              style={{ width: "28.3%" }}
+              style={{
+                width: "28.3%",
+                boxShadow:
+                  "0 8px 25px 0 rgba(30, 144, 255, 0.4), 0 4px 12px 0 rgba(30, 144, 255, 0.3), 0 2px 6px 0 rgba(30, 144, 255, 0.2)",
+              }}
             >
               <div className="absolute inset-0 bg-gradient-to-b from-[#5BA3FF] via-[#1E90FF] to-[#1565C0]"></div>
               <div className="absolute top-0 left-0 right-0 h-1/3 bg-gradient-to-b from-white/50 to-transparent"></div>
@@ -101,7 +132,11 @@ export default function DriverStatistics() {
             </div>
             <div
               className="flex items-center justify-center relative overflow-visible"
-              style={{ width: "17.4%" }}
+              style={{
+                width: "17.4%",
+                boxShadow:
+                  "0 8px 25px 0 rgba(255, 152, 0, 0.4), 0 4px 12px 0 rgba(255, 152, 0, 0.3), 0 2px 6px 0 rgba(255, 152, 0, 0.2)",
+              }}
             >
               <div className="absolute inset-0 bg-gradient-to-b from-[#FFD54F] via-[#FF9800] to-[#E65100]"></div>
               <div className="absolute top-0 left-0 right-0 h-1/3 bg-gradient-to-b from-white/50 to-transparent"></div>
@@ -121,7 +156,11 @@ export default function DriverStatistics() {
 
             <div
               className="flex items-center justify-center relative overflow-visible"
-              style={{ width: "14.6%" }}
+              style={{
+                width: "14.6%",
+                boxShadow:
+                  "0 6px 12px -2px rgba(66, 66, 66, 0.4), 0 4px 8px -2px rgba(66, 66, 66, 0.3), 0 2px 4px -1px rgba(66, 66, 66, 0.2)",
+              }}
             >
               <div className="absolute inset-0 bg-gradient-to-b from-[#757575] via-[#424242] to-[#212121] rounded-r-xl"></div>
               <div className="absolute top-0 left-0 right-0 h-1/3 bg-gradient-to-b from-white/40 to-transparent rounded-r-xl"></div>
@@ -144,24 +183,40 @@ export default function DriverStatistics() {
 
         <div className="flex flex-col divide-y divide-gray-200 text-xs">
           <div className="flex items-center py-1.5">
-            <span className="font-medium text-gray-900 flex-1">On the Way</span>
-            <span className="text-gray-700 w-20 text-right">3 hr 10 min</span>
-            <span className="text-gray-500 w-14 text-right">38.7%</span>
+            <span className="font-medium text-gray-400 flex-1">On the Way</span>
+            <span className="font-semibold text-gray-700 w-20 text-right">
+              3 hr 10 min
+            </span>
+            <span className="font-semibold text-black w-14 text-right">
+              38.7%
+            </span>
           </div>
           <div className="flex items-center py-1.5">
-            <span className="font-medium text-blue-700 flex-1">Unloading</span>
-            <span className="text-gray-700 w-20 text-right">2 hr 15 min</span>
-            <span className="text-blue-500 w-14 text-right">28.3%</span>
+            <span className="font-medium text-gray-400 flex-1">Unloading</span>
+            <span className="font-semibold text-gray-700 w-20 text-right">
+              2 hr 15 min
+            </span>
+            <span className="font-semibold text-black w-14 text-right">
+              28.3%
+            </span>
           </div>
           <div className="flex items-center py-1.5">
-            <span className="font-medium text-yellow-700 flex-1">Loading</span>
-            <span className="text-gray-700 w-20 text-right">1 hr 23 min</span>
-            <span className="text-yellow-600 w-14 text-right">17.4%</span>
+            <span className="font-medium text-gray-400 flex-1">Loading</span>
+            <span className="font-semibold text-gray-700 w-20 text-right">
+              1 hr 23 min
+            </span>
+            <span className="font-semibold text-black w-14 text-right">
+              17.4%
+            </span>
           </div>
           <div className="flex items-center py-1.5">
-            <span className="font-medium text-black flex-1">Waiting</span>
-            <span className="text-gray-700 w-20 text-right">1 hr 10 min</span>
-            <span className="text-black w-14 text-right">14.6%</span>
+            <span className="ffont-medium text-gray-400 flex-1">Waiting</span>
+            <span className="font-semibold text-gray-700 w-20 text-right">
+              1 hr 10 min
+            </span>
+            <span className="font-semibold text-black w-14 text-right">
+              14.6%
+            </span>
           </div>
         </div>
       </div>
