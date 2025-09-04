@@ -15,9 +15,8 @@ export default function StatusPill({ status }: { status: string }) {
       case "WAITING":
         return "text-black";
       case "ON THE WAY":
-        return "text-gray-500";
       case "LOADING":
-        return "text-yellow-600";
+        return "text-gray-500";
       default:
         return "text-gray-500";
     }

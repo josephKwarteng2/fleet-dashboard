@@ -58,7 +58,7 @@ export default function RosterItem({
 
         <div className="flex-1 min-w-0">
           <div className="flex items-center justify-between gap-2">
-            <h3 className="font-bold text-[10px] lg:text-[11px] text-gray-900 truncate leading-none">
+            <h3 className="font-bold text-[12px] text-gray-900 truncate leading-none">
               {item.name}
             </h3>
             <div className="flex-shrink-0">

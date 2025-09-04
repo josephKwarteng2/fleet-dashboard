@@ -52,53 +52,92 @@ export default function DriverStatistics() {
           Average time per day by category
         </div>
 
-        <div className="flex w-full rounded-lg overflow-hidden mb-3 h-10 relative backdrop-blur-md bg-white/10 border border-white/20 shadow-lg">
-          <div
-            className="flex items-center justify-center relative backdrop-blur-sm border-r border-white/20"
-            style={{ width: "38.7%" }}
-          >
-            <div className="absolute inset-0 bg-gradient-to-b from-[#E9EDFB]/90 to-[#E9EDFB]/40"></div>
-            <div className="absolute inset-0 bg-gradient-to-b from-[#E9EDFB]/60 via-[#E9EDFB]/30 to-[#E9EDFB]/10"></div>
-            <span className="font-semibold text-gray-800 text-xs relative z-10">
-              38.7%
-            </span>
-            <div className="absolute left-0 right-0 top-full h-12 bg-gradient-to-b from-[#E9EDFB]/40 to-transparent blur-md z-0"></div>
+        <div className="flex w-full rounded-xl mb-3 h-12 relative shadow-2xl">
+          <div className="absolute -inset-6 bg-gradient-radial from-transparent via-transparent to-transparent pointer-events-none">
+            <div className="absolute top-0 left-0 w-1/3 h-full bg-gradient-to-r from-[#E9EDFB]/20 via-[#E9EDFB]/10 to-transparent blur-xl"></div>
+            <div className="absolute top-0 left-1/4 w-1/4 h-full bg-gradient-to-r from-[#1E90FF]/20 via-[#1E90FF]/10 to-transparent blur-xl"></div>
+            <div className="absolute top-0 left-1/2 w-1/5 h-full bg-gradient-to-r from-[#FF9800]/20 via-[#FF9800]/10 to-transparent blur-xl"></div>
+            <div className="absolute top-0 right-0 w-1/6 h-full bg-gradient-to-l from-[#424242]/15 via-[#424242]/8 to-transparent blur-xl"></div>
           </div>
 
-          <div
-            className="flex items-center justify-center relative backdrop-blur-sm border-r border-white/20"
-            style={{ width: "28.3%" }}
-          >
-            <div className="absolute inset-0 bg-gradient-to-b from-[#1E90FF]/90 to-[#1E90FF]/40"></div>
-            <div className="absolute inset-0 bg-gradient-to-b from-[#1E90FF]/60 via-[#1E90FF]/30 to-[#1E90FF]/10"></div>
-            <span className="font-semibold text-white text-xs relative z-10 drop-shadow-sm">
-              28.3%
-            </span>
-            <div className="absolute left-0 right-0 top-full h-12 bg-gradient-to-b from-[#1E90FF]/40 to-transparent blur-md z-0"></div>
-          </div>
+          <div className="flex w-full rounded-xl overflow-hidden relative">
+            <div
+              className="flex items-center justify-center relative overflow-visible"
+              style={{ width: "38.7%" }}
+            >
+              <div className="absolute inset-0 bg-gradient-to-b from-[#F5F8FF] via-[#E9EDFB] to-[#D1DAF0] rounded-l-xl"></div>
+              <div className="absolute top-0 left-0 right-0 h-1/3 bg-gradient-to-b from-white/60 to-transparent rounded-l-xl"></div>
+              <div className="absolute -top-2 -left-2 -right-2 -bottom-2 bg-gradient-to-br from-[#E9EDFB]/30 via-transparent to-transparent blur-md pointer-events-none"></div>
+              <div className="absolute top-0 -left-4 w-8 h-full bg-gradient-to-r from-[#E9EDFB]/25 to-transparent blur-lg"></div>
+              <div className="absolute -top-3 left-1/2 w-6 h-6 bg-[#E9EDFB]/40 rounded-full blur-sm"></div>
 
-          <div
-            className="flex items-center justify-center relative backdrop-blur-sm border-r border-white/20"
-            style={{ width: "17.4%" }}
-          >
-            <div className="absolute inset-0 bg-gradient-to-b from-[#FF9800]/90 to-[#FF9800]/40"></div>
-            <div className="absolute inset-0 bg-gradient-to-b from-[#FF9800]/60 via-[#FF9800]/30 to-[#FF9800]/10"></div>
-            <span className="font-semibold text-white text-xs relative z-10 drop-shadow-sm">
-              17.4%
-            </span>
-            <div className="absolute left-0 right-0 top-full h-12 bg-gradient-to-b from-[#FF9800]/40 to-transparent blur-md z-0"></div>
-          </div>
+              <span className="font-bold text-gray-800 text-xs relative z-10 drop-shadow-sm">
+                38.7%
+              </span>
+              <div className="absolute left-0 right-0 top-full h-16 overflow-visible opacity-40">
+                <div className="w-full h-full bg-gradient-to-b from-[#E9EDFB] via-[#E9EDFB]/60 to-transparent transform scale-y-[-1] blur-[3px]"></div>
+                <div className="absolute top-2 left-1/4 w-4 h-4 bg-[#E9EDFB]/30 rounded-full blur-sm"></div>
+              </div>
+            </div>
+            <div
+              className="flex items-center justify-center relative overflow-visible"
+              style={{ width: "28.3%" }}
+            >
+              <div className="absolute inset-0 bg-gradient-to-b from-[#5BA3FF] via-[#1E90FF] to-[#1565C0]"></div>
+              <div className="absolute top-0 left-0 right-0 h-1/3 bg-gradient-to-b from-white/50 to-transparent"></div>
+              <div className="absolute -top-2 -left-2 -right-2 -bottom-2 bg-gradient-to-br from-[#1E90FF]/35 via-transparent to-transparent blur-md pointer-events-none"></div>
+              <div className="absolute -top-4 left-1/3 w-5 h-5 bg-[#5BA3FF]/50 rounded-full blur-sm"></div>
+              <div className="absolute top-1/2 -right-3 w-4 h-8 bg-gradient-to-r from-transparent to-[#1E90FF]/30 blur-lg"></div>
 
-          <div
-            className="flex items-center justify-center relative backdrop-blur-sm"
-            style={{ width: "14.6%" }}
-          >
-            <div className="absolute inset-0 bg-gradient-to-b from-black/90 to-black/40"></div>
-            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/10"></div>
-            <span className="font-semibold text-white text-xs relative z-10 drop-shadow-sm">
-              14.6%
-            </span>
-            <div className="absolute left-0 right-0 top-full h-12 bg-gradient-to-b from-black/40 to-transparent blur-md z-0"></div>
+              <span className="font-bold text-white text-xs relative z-10 drop-shadow-lg">
+                28.3%
+              </span>
+
+              <div className="absolute left-0 right-0 top-full h-16 overflow-visible opacity-50">
+                <div className="w-full h-full bg-gradient-to-b from-[#1E90FF] via-[#1E90FF]/60 to-transparent transform scale-y-[-1] blur-[3px]"></div>
+                <div className="absolute top-3 right-1/4 w-3 h-6 bg-[#1E90FF]/40 rounded-full blur-sm"></div>
+              </div>
+            </div>
+            <div
+              className="flex items-center justify-center relative overflow-visible"
+              style={{ width: "17.4%" }}
+            >
+              <div className="absolute inset-0 bg-gradient-to-b from-[#FFD54F] via-[#FF9800] to-[#E65100]"></div>
+              <div className="absolute top-0 left-0 right-0 h-1/3 bg-gradient-to-b from-white/50 to-transparent"></div>
+              <div className="absolute -top-3 -left-1 -right-1 -bottom-1 bg-gradient-to-t from-transparent via-[#FF9800]/30 to-[#FFD54F]/25 blur-md pointer-events-none"></div>
+              <div className="absolute -top-2 right-1/4 w-3 h-3 bg-[#FFD54F]/60 rounded-full blur-sm"></div>
+              <div className="absolute bottom-0 -right-2 w-6 h-4 bg-gradient-to-l from-[#FF9800]/35 to-transparent blur-lg"></div>
+
+              <span className="font-bold text-white text-xs relative z-10 drop-shadow-lg">
+                17.4%
+              </span>
+
+              <div className="absolute left-0 right-0 top-full h-16 overflow-visible opacity-50">
+                <div className="w-full h-full bg-gradient-to-b from-[#FF9800] via-[#FF9800]/60 to-transparent transform scale-y-[-1] blur-[3px]"></div>
+                <div className="absolute top-1 left-1/2 w-4 h-3 bg-[#FF9800]/45 rounded-full blur-sm"></div>
+              </div>
+            </div>
+
+            <div
+              className="flex items-center justify-center relative overflow-visible"
+              style={{ width: "14.6%" }}
+            >
+              <div className="absolute inset-0 bg-gradient-to-b from-[#757575] via-[#424242] to-[#212121] rounded-r-xl"></div>
+              <div className="absolute top-0 left-0 right-0 h-1/3 bg-gradient-to-b from-white/40 to-transparent rounded-r-xl"></div>
+
+              <div className="absolute -top-1 -left-1 -right-3 -bottom-1 bg-gradient-to-bl from-transparent via-[#424242]/25 to-[#757575]/20 blur-md pointer-events-none"></div>
+              <div className="absolute top-1/4 -right-3 w-5 h-5 bg-[#757575]/30 rounded-full blur-sm"></div>
+              <div className="absolute -bottom-2 right-1/3 w-2 h-2 bg-[#424242]/40 rounded-full blur-sm"></div>
+
+              <span className="font-bold text-white text-xs relative z-10 drop-shadow-lg">
+                14.6%
+              </span>
+
+              <div className="absolute left-0 right-0 top-full h-16 overflow-visible opacity-50">
+                <div className="w-full h-full bg-gradient-to-b from-[#424242] via-[#424242]/60 to-transparent transform scale-y-[-1] blur-[3px]"></div>
+                <div className="absolute top-2 right-1/2 w-3 h-4 bg-[#424242]/35 rounded-full blur-sm"></div>
+              </div>
+            </div>
           </div>
         </div>
 

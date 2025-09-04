@@ -91,10 +91,6 @@ export default function VehicleSpecCard() {
                     6TRJ244
                   </span>
                 </div>
-
-                <div className="flex items-center gap-2">
-                  <span className="text-xs text-gray-600">Documents</span>
-                </div>
               </div>
             </div>
 
