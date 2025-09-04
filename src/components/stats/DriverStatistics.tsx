@@ -25,33 +25,34 @@ export default function DriverStatistics() {
 
   return (
     <div className="w-full h-full flex flex-col min-h-0 p-4 divide-y divide-gray-200">
-      <div className="flex items-center justify-between px-3 py-2 flex-shrink-0">
+      <div className="flex items-center justify-between px-3 py-4 flex-shrink-0">
         <h2 className="font-semibold text-sm flex items-center gap-1">
           Driver Statistics
           <span className="ml-1 text-gray-400 text-base">&rarr;</span>
         </h2>
-        <div className="flex gap-1">
-          {["W", "M", "6M", "Y"].map((period) => (
-            <button
-              key={period}
-              onClick={() => setRange(period)}
-              className={`px-2 py-0.5 rounded text-xs font-medium transition-colors ${
-                range === period
-                  ? "bg-gray-200 text-gray-900"
-                  : "text-gray-500 hover:text-gray-900"
-              }`}
-            >
-              {period}
-            </button>
-          ))}
-        </div>
       </div>
 
       <div className="px-3 py-3">
-        <div className="font-medium text-[11px] text-gray-700 mb-2 uppercase tracking-wide">
-          Average time per day by category
+        <div className="flex justify-between items-center mb-2 ont-medium text-[11px]">
+          <div className="font-medium text-[11px] text-gray-700  uppercase tracking-wide">
+            Average time per day by category
+          </div>
+          <div className="flex gap-0.5">
+            {["W", "M", "6M", "Y"].map((period) => (
+              <button
+                key={period}
+                onClick={() => setRange(period)}
+                className={`px-2 py-0.5 rounded text-xs font-medium transition-colors ${
+                  range === period
+                    ? "bg-gray-200 text-gray-900"
+                    : "text-gray-500 hover:text-gray-900"
+                }`}
+              >
+                {period}
+              </button>
+            ))}
+          </div>
         </div>
-
         <div className="flex w-full rounded-xl mb-3 h-12 relative shadow-2xl">
           <div className="absolute -inset-6 bg-gradient-radial from-transparent via-transparent to-transparent pointer-events-none">
             <div className="absolute top-0 left-0 w-1/3 h-full bg-gradient-to-r from-[#E9EDFB]/20 via-[#E9EDFB]/10 to-transparent blur-xl"></div>
